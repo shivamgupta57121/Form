@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" required placeholder="John">
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname" required placeholder="Smith">
+	    </div>
+		<div>
+			<label>Gender :</label><br>
+	        <label for="male">Male</label>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="female">Female</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="other">Other</label>
+			<input type="radio" id="other" name="gender" value="other">
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="email" placeholder="your email" id="email">
+			<label for="password">Password:</label>
+			<input type="password" name="password" placeholder="your password" id="password" pattern=".{5,10}" title="Password must be 5 to 10 characters" required>
+		</div>
+        <div>
+			<label id="bday" >Birthday:</label>
+			<input type="date" name="bday">
+		</div>
+		<div>
+		<label for="chb">I agree to terms and conditions</label>
+		<input type="checkbox" id="chb" name="chb">
+		</div>
+		<button>Submit</button>
+	</form>
+</body>
+</html>
